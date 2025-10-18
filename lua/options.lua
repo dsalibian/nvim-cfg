@@ -4,7 +4,7 @@ vim.opt.relativenumber = true
 vim.opt.splitbelow = true
 vim.opt.splitright = true
 
---vim.opt.wrap = false
+vim.opt.wrap = false
 
 vim.opt.expandtab = true
 vim.opt.tabstop = 4
@@ -26,3 +26,18 @@ vim.g.mapleader = " "
 
 
 vim.keymap.set('t', '<Esc>', [[<C-\><C-n>]])
+
+
+
+-- clangd diagnostics
+vim.diagnostic.config({
+  virtual_text = {
+    prefix = "●",
+    source = true,
+  },
+  signs = true,
+  underline = true,
+  update_in_insert = false,
+  severity_sort = true,
+})
+
