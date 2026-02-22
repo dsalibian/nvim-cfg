@@ -28,6 +28,14 @@ vim.g.maplocalleader = "\\"
 
 vim.keymap.set('t', '<Esc>', [[<C-\><C-n>]])
 
+vim.diagnostic.config({
+    virtual_text = true,
+})
+
+
+
+
+
 
 
 
